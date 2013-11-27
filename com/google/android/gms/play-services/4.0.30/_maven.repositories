@@ -1,4 +1,4 @@
 #NOTE: This is an internal implementation file, its format can be changed without prior notice.
-#Wed Nov 27 18:47:33 SGT 2013
-play-services-jar-4.0.30.jar>=
-play-services-jar-4.0.30.pom>=
+#Wed Nov 27 18:48:04 SGT 2013
+play-services-4.0.30.apklib>=
+play-services-4.0.30.pom>=

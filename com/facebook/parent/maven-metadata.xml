@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>com.facebook</groupId>
+  <artifactId>parent</artifactId>
+  <versioning>
+    <versions>
+      <version>3.5.2-SNAPSHOT</version>
+    </versions>
+    <lastUpdated>20140106091617</lastUpdated>
+  </versioning>
+</metadata>

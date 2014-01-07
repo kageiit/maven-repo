@@ -8,7 +8,11 @@
   <artifactId>parent</artifactId>
   <packaging>pom</packaging>
   <version>3.5.2-SNAPSHOT</version>
-
+  <parent>
+    <groupId>org.sonatype.oss</groupId>
+    <artifactId>oss-parent</artifactId>
+    <version>7</version>
+  </parent>
   <modules>
     <module>facebook</module>
   </modules>
@@ -26,7 +30,8 @@
     <android-support.version>r7</android-support.version>
   </properties>
 
-  <dependencies>
+  <dependencyManagement>
+    <dependencies>
       <dependency>
         <groupId>com.google.android</groupId>
         <artifactId>android</artifactId>
@@ -37,7 +42,8 @@
         <artifactId>support-v4</artifactId>
         <version>${android-support.version}</version>
       </dependency>
-  </dependencies>
+    </dependencies>
+  </dependencyManagement>
 
   <build>
     <pluginManagement>
@@ -71,7 +77,7 @@
           <failOnError>false</failOnError>
         </configuration>
       </plugin>
-	  
+
       <plugin>
         <groupId>com.google.code.maven-replacer-plugin</groupId>
         <artifactId>maven-replacer-plugin</artifactId>
@@ -105,7 +111,7 @@
         <version>3.5.0</version>
         <configuration>
           <sdk>
-			<path>${ANDROID_HOME}</path>
+            <path>${ANDROID_HOME}</path>
             <!-- platform or api level (api level 14 = platform 4.0)-->
             <platform>14</platform>
           </sdk>
@@ -113,7 +119,7 @@
         </configuration>
         <extensions>true</extensions>
       </plugin>
-	  
+
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-surefire-plugin</artifactId>

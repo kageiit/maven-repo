@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <metadata>
-  <groupId>com.tabstream.sdk</groupId>
-  <artifactId>tabstream</artifactId>
+  <groupId>com.tapstream.sdk</groupId>
+  <artifactId>tapstream</artifactId>
   <versioning>
     <release>1.0</release>
     <versions>
